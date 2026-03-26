@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .glass-panel-gold {
+    @apply bg-gold-500/5 backdrop-blur-xl border border-gold-500/20 shadow-[0_4px_30px_rgba(212,175,55,0.05)];
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gold-gradient;
+  }
+}
+
+body {
+  @apply bg-dark-900 text-gray-200 antialiased selection:bg-gold-500/30 selection:text-gold-200;
+}
